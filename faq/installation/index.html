@@ -1,0 +1,1187 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://sinusbot.github.io/docs/faq/installation/">
+      
+      
+        <link rel="prev" href="../general/">
+      
+      
+        <link rel="next" href="../features/">
+      
+      <link rel="icon" href="https://sinusbot.github.io/favicon.ico">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.3">
+    
+    
+      
+        <title>Installation - SinusBot Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.c4a75a56.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="red">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#when-will-feature-x-be-implemented" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="SinusBot Documentation" class="md-header__button md-logo" aria-label="SinusBot Documentation" data-md-component="logo">
+      
+  <img src="../../logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SinusBot Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Installation
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/SinusBot/docs/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SinusBot/docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="SinusBot Documentation" class="md-nav__button md-logo" aria-label="SinusBot Documentation" data-md-component="logo">
+      
+  <img src="../../logo.svg" alt="logo">
+
+    </a>
+    SinusBot Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/SinusBot/docs/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SinusBot/docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Installation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Installation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation/linux/" class="md-nav__link">
+        Linux
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation/windows/" class="md-nav__link">
+        Windows
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation/docker/" class="md-nav__link">
+        Docker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../youtube-dl/" class="md-nav__link">
+        youtube-dl
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+          Reverse Proxy
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2_5">
+          <span class="md-nav__icon md-icon"></span>
+          Reverse Proxy
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reverse-proxy/nginx/" class="md-nav__link">
+        NGINX
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reverse-proxy/apache2/" class="md-nav__link">
+        Apache 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reverse-proxy/common-adaptations/" class="md-nav__link">
+        Common Adaptations
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation/discord/" class="md-nav__link">
+        Discord
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation/increase-security-level/" class="md-nav__link">
+        Increase TS Security Level
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          FAQ
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          FAQ
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../general/" class="md-nav__link">
+        General
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Installation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Installation
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#when-will-feature-x-be-implemented" class="md-nav__link">
+    When will feature X be implemented?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-default-username-and-password" class="md-nav__link">
+    What is the default username and password?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ports-and-ips" class="md-nav__link">
+    Ports and IP Ranges
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32bit" class="md-nav__link">
+    Is there a 32bit version?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elf-not-found" class="md-nav__link">
+    Error: ELF: not found
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distro-support" class="md-nav__link">
+    Supported Distros
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ssl-errors-on-download" class="md-nav__link">
+    SSL errors on download
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ts-client-quit" class="md-nav__link">
+    Error: TSClient quit.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lags-on-windows" class="md-nav__link">
+    Lags on Windows
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fix-file-permissions" class="md-nav__link">
+    Fix File Permissions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#missing-locales" class="md-nav__link">
+    Error: c locale name not valid
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#database-errors" class="md-nav__link">
+    Error on database operations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-spawning-instancefork-exec" class="md-nav__link">
+    Error spawning instancefork/exec
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#could-not-open-tmpsinusbotlock-is-sinusbot-already-running" class="md-nav__link">
+    Could not open /tmp/.sinusbot.lock. Is SinusBot already running?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-cant-i-run-the-bot-as-root" class="md-nav__link">
+    Why can't I run the bot as root?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-does-a-manual-update-is-required-mean" class="md-nav__link">
+    What does "a manual update is required" mean?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-does-could-not-contact-update-server-mean" class="md-nav__link">
+    What does "could not contact update server" mean?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/" class="md-nav__link">
+        Features
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../whatsnew/" class="md-nav__link">
+        What is new?
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../scripts/" class="md-nav__link">
+        Scripting
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration/" class="md-nav__link">
+        Configuration
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../licenses/" class="md-nav__link">
+        Licenses
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../locales/" class="md-nav__link">
+        Localization
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tts/" class="md-nav__link">
+        Text-to-Speech
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../speechrecognition/" class="md-nav__link">
+        Speech Recognition
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#when-will-feature-x-be-implemented" class="md-nav__link">
+    When will feature X be implemented?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-the-default-username-and-password" class="md-nav__link">
+    What is the default username and password?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ports-and-ips" class="md-nav__link">
+    Ports and IP Ranges
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32bit" class="md-nav__link">
+    Is there a 32bit version?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elf-not-found" class="md-nav__link">
+    Error: ELF: not found
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distro-support" class="md-nav__link">
+    Supported Distros
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ssl-errors-on-download" class="md-nav__link">
+    SSL errors on download
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ts-client-quit" class="md-nav__link">
+    Error: TSClient quit.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lags-on-windows" class="md-nav__link">
+    Lags on Windows
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fix-file-permissions" class="md-nav__link">
+    Fix File Permissions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#missing-locales" class="md-nav__link">
+    Error: c locale name not valid
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#database-errors" class="md-nav__link">
+    Error on database operations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-spawning-instancefork-exec" class="md-nav__link">
+    Error spawning instancefork/exec
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#could-not-open-tmpsinusbotlock-is-sinusbot-already-running" class="md-nav__link">
+    Could not open /tmp/.sinusbot.lock. Is SinusBot already running?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-cant-i-run-the-bot-as-root" class="md-nav__link">
+    Why can't I run the bot as root?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-does-a-manual-update-is-required-mean" class="md-nav__link">
+    What does "a manual update is required" mean?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-does-could-not-contact-update-server-mean" class="md-nav__link">
+    What does "could not contact update server" mean?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Installation</h1>
+
+<h3 id="when-will-feature-x-be-implemented">When will feature X be implemented?<a class="headerlink" href="#when-will-feature-x-be-implemented" title="Permanent link">🔗</a></h3>
+<div class="admonition success">
+<p>There will be <strong>no ETA</strong> (estimated time of arrival) on any feature. It’s done when it’s done, please don’t ask.</p>
+</div>
+<h3 id="what-is-the-default-username-and-password">What is the default username and password?<a class="headerlink" href="#what-is-the-default-username-and-password" title="Permanent link">🔗</a></h3>
+<p>The default username is <code>admin</code>.</p>
+<details class="info" open="open">
+<summary>Windows</summary>
+<p>Double click the SinusBot logo in the tray (next to your clock at the bottom right of the screen) to login. If you need credentials to login from another system, edit the user account or create a new one and set a new password.</p>
+</details>
+<details class="info" open="open">
+<summary>Linux</summary>
+<p>The bot will initially have a <strong>randomly generated password</strong> which is <strong>displayed on first run</strong> in the console. The sinusbot installer will also print the password at the end of the installation.</p>
+<p>Unexperienced users should use the sinusbot-installer script to reset the password.</p>
+<p>More experienced users can temprorarily override the password and change it by folling these steps:</p>
+<ol>
+<li>Stop the sinusbot (ie. <code>systemctl stop sinusbot</code>)</li>
+<li>Start the sinusbot with the <code>--override-password=newpassword</code> flag as the sinusbot user:<ul>
+<li>login as the sinusbot user: <code>su sinusbot</code></li>
+<li>go to the sinusbot directory: <code>cd /opt/sinusbot</code></li>
+<li>start the sinusbot: <code>./sinusbot --override-password=newpassword</code> (<strong>don't</strong> do this as root!)</li>
+</ul>
+</li>
+<li>Login as <code>admin</code> with the specified password (ie. <code>newpassword</code>) and change your password to a new one.</li>
+<li>Stop the sinusbot: <span class="keys"><kbd class="key-control">Ctrl</kbd><span>+</span><kbd class="key-c">C</kbd></span></li>
+<li>Afterwards restart the sinusbot <em>without</em> the <code>--override-password</code> parameter. (ie. <code>systemctl start sinusbot</code>)</li>
+</ol>
+<p>If the sinusbot doesn't start afterwards and you get something like</p>
+<div class="codehilite"><pre><span></span><code><span class="nv">Job</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nv">sinusbot</span>.<span class="nv">service</span><span class="w"> </span><span class="nv">failed</span><span class="w"> </span><span class="nv">because</span><span class="w"> </span><span class="nv">the</span><span class="w"> </span><span class="nv">control</span><span class="w"> </span><span class="nv">process</span><span class="w"> </span><span class="nv">exited</span><span class="w"> </span><span class="nv">with</span><span class="w"> </span><span class="nv">error</span><span class="w"> </span><span class="nv">code</span>.
+<span class="nv">See</span><span class="w"> </span><span class="s2">&quot;systemctl status sinusbot.service&quot;</span><span class="w"> </span><span class="nv">and</span><span class="w"> </span><span class="s2">&quot;journalctl -xe&quot;</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="nv">details</span>.
+</code></pre></div>
+
+<p>then you did something wrong, such as: starting the bot as root or not stopping the bot, ...</p>
+<p>Look at the sinusbot log (as it says) with <code>journalctl -xe</code> and search for a solution on this FAQ page or in the forum.</p>
+</details>
+<h3 id="ports-and-ips">What Ports and IP Ranges are used?<a class="headerlink" href="#ports-and-ips" title="Permanent link">🔗</a></h3>
+<div class="admonition success">
+<p>The SinusBot requires an internet connection and contacts our update servers on each start.
+As the update servers make use of use cloudflare, access to <a href="https://www.cloudflare.com/ips/">cloudflares IP ranges</a> is required.</p>
+<p>The TeamSpeak 3 client makes outgoing connections to the TeamSpeak server that you configure. The default ports are listed <a href="https://support.teamspeakusa.com/index.php?/Knowledgebase/Article/View/44/16/which-ports-does-the-teamspeak-3-server-use">here</a> (ie. <code>9987 (UDP)</code>, <code>30033 (TCP)</code>, ...).</p>
+<p>Finally, the SinusBot webinterface listens for incoming HTTP requests on port <code>8087 (TCP)</code> by default. The address and port can be changed in the config by setting <code>ListenHost</code> and <code>ListenPort</code>. Make sure to allow incoming TCP requests to this port in your firewall.</p>
+</div>
+<h3 id="32bit">Is there a version for 32bit Windows / Linux?<a class="headerlink" href="#32bit" title="Permanent link">🔗</a></h3>
+<div class="admonition success">
+<p>No, there isn’t and there probably won't be one as that would mean much more maintenance work for not that many users.</p>
+</div>
+<h3 id="elf-not-found">I get some message like "ELF: not found" on Linux when trying to start the bot. WTF?<a class="headerlink" href="#elf-not-found" title="Permanent link">🔗</a></h3>
+<div class="admonition success">
+<p>You are trying to run the bot on a 32bit OS. Upgrade your system to 64bit to make the bot work (see above: <a href="#32bit">there is no 32bit version</a>).</p>
+</div>
+<h3 id="distro-support">Do you support CentOS, Fedora, (name your distro)…?<a class="headerlink" href="#distro-support" title="Permanent link">🔗</a></h3>
+<div class="admonition success">
+<p>Probably. I’ve heard of people running the bot on ArchLinux, CentOS, Fedora and others. Rule of thumb is: if the TS3 Client can run there, the bot usually can as well. However, these distributions have not been officially tested and there’s no documentation available.</p>
+<p>We provide documentation and support for the latest LTS releases of Debian and Ubuntu.</p>
+</div>
+<h3 id="ssl-errors-on-download">When trying to download the bot, I get errors about SSL. Why and how to fix that?<a class="headerlink" href="#ssl-errors-on-download" title="Permanent link">🔗</a></h3>
+<div class="admonition success">
+<p>The whole website now runs on SSL which is far more secure when it comes to software you want to install on your server. However, some linux distributions only have outdated root certificates and those of cloudflare are missing. You can try to upate them via <code>sudo update-ca-certificates</code> on debian/ubuntu.</p>
+<p>Otherwise, you can try to use <code>curl -O https://...</code></p>
+</div>
+<h3 id="ts-client-quit">When I start the bot from the webinterface, it doesn’t work. It says something about “TSClient quit.” in the log<a class="headerlink" href="#ts-client-quit" title="Permanent link">🔗</a></h3>
+<div class="admonition success">
+<p>This can have many reasons. It means that the TeamSpeak client is unable to run or connect to the destination server. You either have not enough free memory, dependencies for the client are missing, or or or. Please search the forum and post your problem along with the log if you cannot find an issue similar to yours.</p>
+<p>Here's a quick checklist:</p>
+<ul>
+<li>does your server have enough RAM? (at least 300 MB are recommended)</li>
+<li>did you follow the installation guide thoroughly and installed all required dependencies?</li>
+<li>do you run the bot on an officially supported OS? Windows, Debian, Ubuntu are officially supported.</li>
+<li>did you try setting the locale manually like it says in the "Troubleshooting" section of the installation guide?</li>
+<li>did you copy the plugin like it says in the documentation?</li>
+<li>make sure the server ip/adress is correct</li>
+<li>make sure your client is up to date since older versions might be blocked</li>
+<li>make sure the security level is lower or equal to the clients identity level</li>
+</ul>
+</div>
+<h3 id="lags-on-windows">My bot stutters / lags a lot on Windows. What can I do?<a class="headerlink" href="#lags-on-windows" title="Permanent link">🔗</a></h3>
+<div class="admonition success">
+<p>Increase the bots’ priority and also that of the client instances it uses. You can do that within the task manager.
+You can also try to decrease the setting SampleInterval, adjusting it to <code>SampleInterval = 40</code> in your config.ini.</p>
+</div>
+<h3 id="fix-file-permissions">Someone told me to fix the file permissions. How do I do that?<a class="headerlink" href="#fix-file-permissions" title="Permanent link">🔗</a></h3>
+<div class="admonition success">
+<p>Given your bot has been installed in <code>/opt/sinusbot</code> and you've added a user sinusbot with the group sinusbot as well, run the following command with root permissions:</p>
+<div class="codehilite"><pre><span></span><code>chown -R sinusbot:sinusbot /opt/sinusbot
+</code></pre></div>
+
+</div>
+<h3 id="missing-locales">I get an error like "what(): locale::facet::_S_create_c_locale name not valid". What do I do?<a class="headerlink" href="#missing-locales" title="Permanent link">🔗</a></h3>
+<div class="admonition success">
+<p>Example Error:</p>
+<div class="codehilite"><pre><span></span><code>terminate called after throwing an instance of &#39;std::runtime_error&#39;
+what(): locale::facet::_S_create_c_locale name not valid
+</code></pre></div>
+
+<p>On some minimal installs of Debian or other distributions, the locales are not completely installed / built.
+This error can be corrected as follow (<strong>run as root</strong>):</p>
+<p>Debian:</p>
+<div class="codehilite"><pre><span></span><code>apt-get install locales
+dpkg-reconfigure locales
+</code></pre></div>
+
+<p>Ubuntu:</p>
+<div class="codehilite"><pre><span></span><code>apt-get install locales
+locale-gen en_US.UTF-8
+update-locale LANG=en_US.UTF-8
+reboot
+</code></pre></div>
+
+</div>
+<h3 id="database-errors">I get an error when starting: Updating database to v7... 6 / Error on database operations: there is already another table or index with this name:<a class="headerlink" href="#database-errors" title="Permanent link">🔗</a></h3>
+<div class="admonition success">
+<p>This is a bug in the database upgrade process which happens when you upgrade from &lt;= 0.9.9 to a newer version, go back to &lt;= 0.9.9 and then try to upgrade again (or more likely: when starting the bot via ./ts3bot, even when the newer version ./sinusbot is installed).</p>
+<p>To get around this, please carefully do the following:</p>
+<ul>
+<li>stop the bot process completely</li>
+<li>edit your config.ini and add <code>Pragma = 7</code> at the top</li>
+<li>start the bot and wait 2-3 minutes</li>
+<li>shut down the bot again</li>
+<li>remove that Pragma entry (this is really important)</li>
+<li>start the bot normally</li>
+</ul>
+<p>That should fix it.</p>
+</div>
+<h3 id="error-spawning-instancefork-exec">On Windows I get the following error: Error spawning instancefork/exec... WTF?<a class="headerlink" href="#error-spawning-instancefork-exec" title="Permanent link">🔗</a></h3>
+<div class="admonition success">
+<p>Most people who see this error have the compatibility mode enabled for either the bot or the TS3 client. Please disable the compatibility mode and try again.</p>
+</div>
+<h3 id="could-not-open-tmpsinusbotlock-is-sinusbot-already-running">Could not open /tmp/.sinusbot.lock. Is SinusBot already running?<a class="headerlink" href="#could-not-open-tmpsinusbotlock-is-sinusbot-already-running" title="Permanent link">🔗</a></h3>
+<div class="admonition success">
+<p>Remove the file with <code>rm /tmp/.sinusbot.lock</code> and make sure <strong>not</strong> to run the bot as root.</p>
+</div>
+<h3 id="why-cant-i-run-the-bot-as-root">Why can't I run the bot as root?<a class="headerlink" href="#why-cant-i-run-the-bot-as-root" title="Permanent link">🔗</a></h3>
+<div class="admonition success">
+<p>Unnecessarily running software with the root user is a potential security risk and is generally considered bad practice.</p>
+<p>You should always run any program with the least amount of permissions required.</p>
+<p><strong>So how can I run the bot then?</strong></p>
+<p>Start the bot with another user or <a href="../../installation/linux/#using-a-startscript">use a startscipt</a> to run the bot.
+You'll have to <a href="#fix-file-permissions">change the ownership</a> of the entire folder to the new user.</p>
+</div>
+<h3 id="what-does-a-manual-update-is-required-mean">What does "a manual update is required" mean?<a class="headerlink" href="#what-does-a-manual-update-is-required-mean" title="Permanent link">🔗</a></h3>
+<div class="admonition success">
+<p>This error message appears when the time of your server is not accurate.
+To fix this issue set the correct time and configure ntp to keep it synced properly.</p>
+<p>This might also be caused by old SinusBot versions. Update your SinusBot if necessary.</p>
+</div>
+<h3 id="what-does-could-not-contact-update-server-mean">What does "could not contact update server" mean?<a class="headerlink" href="#what-does-could-not-contact-update-server-mean" title="Permanent link">🔗</a></h3>
+<div class="admonition success">
+<p>This error message appears when the SinusBot is unable to contact our update servers.</p>
+<p>Possible causes:</p>
+<ul>
+<li>no internet connection or invalid network/dns-resolver configuration</li>
+<li>cloudflare is showing a captcha page because your IP is marked as shady</li>
+<li>your IP is blacklisted due to suspected non-private use<ul>
+<li>You are only allowed to run <strong>one</strong> SinusBot and <strong>commercial/non-private use is not allowed</strong> without prior, written consent by the author. If you need more instances then <a href="https://sinusbot.github.io/docs/licenses/">get a license</a>.</li>
+<li>
+<ul>
+<li>your servers IP address</li>
+<li>output of the curl and  dig commands below</li>
+</ul>
+<p>In case you think there was a mistake or you want to ask for a second chance, post in our forum or discord server and include the following information:</p>
+<p>Please be polite, explain the situation in detail and provide your IP address! <br>
+There is no point in lying, if you are not honest then we are not interested in talking to you.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Please check <code>curl -v --no-keepalive --http1.1 https://update01.sinusbot.com</code>. <br>
+If it returns a 404 (<code>&lt; HTTP/1.1 404 Not Found</code>) then cloudflare should not be the issue. <br>
+If it returns a 403 (<code>&lt; HTTP/1.1 403</code>) and HTML code with a captcha then cloudflare requires you to solve the captcha because your IP address is not trusted. Before you ask: No, we can't whitelist your IP from cloudflare.</p>
+<p>To check DNS, use <code>dig A +short update01.sinusbot.com</code>. It should return something in the <a href="https://www.cloudflare.com/ips/">cloudflare ranges</a>.</p>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; The SinusBot Team and Contributors.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://sinusbot.com" target="_blank" rel="noopener" title="sinusbot.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64h185.4c2.2 20.4 3.3 41.8 3.3 64zm28.8-64h123.1c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6 78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7 10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5 11.6 26 21 58.2 27 94.7zm-209 0H18.6c30-74.1 93.6-130.9 172-151.6-25.5 34.2-45.3 87.7-55.3 151.6zM8.1 192h123.1c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zm186.6 254.6c-11.6-26-20.9-58.2-27-94.6h176.6c-6.1 36.4-15.5 68.6-27 94.6-10.5 23.6-22.2 40.7-33.5 51.5-11.2 10.7-20.5 13.9-27.8 13.9s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6-78.4-20.7-142-77.5-172-151.6h116.7zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6 25.5-34.2 45.2-87.7 55.3-151.6h116.6z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/SinusBot" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/sinusbot" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.facebook.com/sinusbot" target="_blank" rel="noopener" title="www.facebook.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://forum.sinusbot.com" target="_blank" rel="noopener" title="forum.sinusbot.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M64 160c0-35.3 28.7-64 64-64h32c35.3 0 64 28.7 64 64v3.6c0 21.8-11.1 42.1-29.4 53.8l-42.2 27.1a87.983 87.983 0 0 0-40.4 74v1.5c0 17.7 14.3 32 32 32s32-14.3 32-32v-1.4c0-8.2 4.2-15.8 11-20.2l42.2-27.1c36.6-23.6 58.8-64.1 58.8-107.7V160c0-70.7-57.3-128-128-128h-32C57.3 32 0 89.3 0 160c0 17.7 14.3 32 32 32s32-14.3 32-32zm80 320a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["instant"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.efa0ade1.min.js"></script>
+      
+    
+  </body>
+</html>
