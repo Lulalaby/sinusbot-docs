@@ -952,11 +952,11 @@ chown<span class="w"> </span>-R<span class="w"> </span>sinusbot:sinusbot<span cl
 <p>Then we will switch over to the recently created user dedicated for the sinusbot, change the working directory and to download the latest Sinusbot release:</p>
 <div class="codehilite"><pre><span></span><code>su<span class="w"> </span>sinusbot
 <span class="nb">cd</span><span class="w"> </span>/opt/sinusbot
-wget<span class="w"> </span>https://www.sinusbot.com/pre/sinusbot-1.0.2-amd64.tar.bz2
+wget<span class="w"> </span>https://www.sinusbot.com/dl/sinusbot.current.tar.bz2
 </code></pre></div>
 
 <p>If that command results in SSL-Errors, you can <strong>alternatively</strong> try</p>
-<div class="codehilite"><pre><span></span><code>curl<span class="w"> </span>-O<span class="w"> </span>https://www.sinusbot.com/pre/sinusbot-1.0.2-amd64.tar.bz2
+<div class="codehilite"><pre><span></span><code>curl<span class="w"> </span>-O<span class="w"> </span>https://www.sinusbot.com/dl/sinusbot.current.tar.bz2
 </code></pre></div>
 
 <p>Next, extract the bot:</p>
@@ -1071,9 +1071,9 @@ chmod<span class="w"> </span><span class="m">0755</span><span class="w"> </span>
 <div class="codehilite"><pre><span></span><code><span class="c1"># go into the sinusbot directory</span>
 <span class="nb">cd</span><span class="w"> </span>/opt/sinusbot
 <span class="c1"># download the current release</span>
-wget<span class="w"> </span>https://www.sinusbot.com/pre/sinusbot-1.0.2-amd64.tar.bz2
+wget<span class="w"> </span>https://www.sinusbot.com/dl/sinusbot.current.tar.bz2
 <span class="c1"># unpack it</span>
-tar<span class="w"> </span>-xjvf<span class="w"> </span>sinusbot-1.0.2-amd64.tar.bz2
+tar<span class="w"> </span>-xjvf<span class="w"> </span>sinusbot.current.tar.bz2
 <span class="c1"># copy the plugin</span>
 cp<span class="w"> </span>plugin/libsoundbot_plugin.so<span class="w"> </span>TeamSpeak3-Client-linux_amd64/plugins/
 <span class="c1"># fix the file permissions if you&#39;re doing this as root</span>
